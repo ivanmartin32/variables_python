@@ -117,7 +117,11 @@ def ej5():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    ej1()
+    # ej1()
+
+    numero_1 = 5
+    numero_2 = 7
+    operacion_suma = numero_1 + numero_2
     # ej2()
     # ej3()
     # ej4()
