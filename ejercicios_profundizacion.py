@@ -153,7 +153,25 @@ def ej5():
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
-    ej1()
+    # ej1()
+    print('Primera Calculadora')
+    print('Ingrese primer numero')
+    numero_1 = float(input())
+    print('Ingrese segundo numero')
+    numero_2 = float(input())
+    resultado_suma = numero_1 + numero_2
+    resultado_resta = numero_1 - numero_2
+    resultado_mult = numero_1 * numero_2
+    resultado_div = numero_1 / numero_2
+    resultado_pot = numero_1 ** numero_2
+
+    print('La suma entre', numero_1, 'y', numero_2, 'es', resultado_suma,'\n'
+          'La resta entre', numero_1, 'y', numero_2, 'es', resultado_resta,'\n'
+          'La multiplicacion entre', numero_1, 'y', numero_2, 'es', resultado_mult,'\n'
+          'La division entre', numero_1, 'y', numero_2, 'es', resultado_div,'\n'
+          'El resultado entre', numero_1, 'elevado a', numero_2, 'es', resultado_pot)
+
+
     # ej2()
     # ej3()
     # ej4()
