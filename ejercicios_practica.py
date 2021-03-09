@@ -119,10 +119,66 @@ if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     # ej1()
 
+    print('Ejercicio 1')
     numero_1 = 5
     numero_2 = 7
     operacion_suma = numero_1 + numero_2
+    operacion_resta = numero_1 - numero_2
+    print('El resultado de la suma de', numero_1, 'y', numero_2, 'es', operacion_suma)
+    print('El resultado de la resta de', numero_1, 'y', numero_2, 'es', operacion_resta)
+
     # ej2()
+
+    print('Ejercicio 2')
+    print('Ingrese el primer número decimal a operar:')
+    numero_1 = int(input())
+    print('El numero elegido es', numero_1)
+    print('Ingrese el segundo número decimal a operar:')
+    numero_2 = int(input())
+    print('El numero elegido es', numero_2)
+    resultado_suma = numero_1 + numero_2
+    print('el resultado de la suma de', numero_1, 'y', numero_2, 'es', resultado_suma)
+    resultado_resta = numero_1 - numero_2
+    print('el resultado de la resta de', numero_1, 'y', numero_2, 'es', resultado_resta)
+    resultado_mult = numero_1 * numero_2
+    print('el resultado de la multiplicacion de', numero_1, 'y', numero_2, 'es', resultado_mult)
+    resultado_div = numero_1 / numero_2
+    print('el resultado de la division de', numero_1, 'y', numero_2, 'es', resultado_div)
+
     # ej3()
+
+    print('Ejercicio 3')
+    print('Ingrese su nombre/s:')
+    nombre = str(input())
+    print('Ingrese su apellido/s:')
+    apellido = str(input())
+    nombre_completo = nombre.capitalize() + ' ' + apellido.capitalize()
+    print(nombre_completo)
+    letras = len(nombre_completo)
+    print(nombre_completo, 'tiene', letras-1, 'letras')
+
     # ej4()
+    print('ejercicio 4')
+    print('Ingrese palabra 1:')
+    palabra_1 = str(input())
+    print('Ingrese palabra 2:')
+    palabra_2 = str(input())
+    print('Ingrese palabra 3:')
+    palabra_3 = str(input())
+    print('Ingrese palabra 4:')
+    palabra_4 = str(input())
+    # coloque concatenador + para que en la sigla salgan los acronimos juntos, 
+    # porque con coma(,) separa la sigla a armar con un espacio
+    print('La union de acronimos forma la sigla', palabra_1[0].capitalize()
+    +palabra_2[0].capitalize()+palabra_3[0].capitalize()+palabra_4[0].capitalize())
+    
     # ej5()
+    print('Ejercicio 5')
+    print('Ingrese palabra 1:')
+    palabra_1 = str(input())
+    print('Ingrese palabra 2:')
+    palabra_2 = str(input())
+    recorte_1 = palabra_1[:3]
+    recorte_2 = palabra_2[-3:]
+    print('El recorte solicitado forma la palabra',recorte_1+recorte_2)
+
