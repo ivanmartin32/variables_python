@@ -202,7 +202,7 @@ if __name__ == '__main__':
     nom_com_madre = str(input())
     nom_com_madre.split(" ")
     nombre_madre,apellido_madre = nom_com_madre.split(" ")
-    print('Ingrese nombre del hijo/a')
+    print('Ingrese nombre completo del hijo/a')
     nombre_hijo =str(input())
     print(nombre_hijo.capitalize(),apellido_padre.capitalize(),apellido_madre.capitalize())
     
