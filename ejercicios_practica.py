@@ -31,6 +31,11 @@ def ej1():
 
     # Repita el procedimiento para realizar la resta
 
+    operacion_suma = numero_1 + numero_2
+    operacion_resta = numero_1 - numero_2
+    print('El resultado de la suma de', numero_1, 'y', numero_2, 'es', operacion_suma)
+    print('El resultado de la resta de', numero_1, 'y', numero_2, 'es', operacion_resta)
+
 
 def ej2():
     # Ejercicios de práctica numérica
@@ -117,15 +122,15 @@ def ej5():
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
-    # ej1()
+    ej1()
 
-    print('Ejercicio 1')
-    numero_1 = 5
-    numero_2 = 7
-    operacion_suma = numero_1 + numero_2
-    operacion_resta = numero_1 - numero_2
-    print('El resultado de la suma de', numero_1, 'y', numero_2, 'es', operacion_suma)
-    print('El resultado de la resta de', numero_1, 'y', numero_2, 'es', operacion_resta)
+    
+    
+    
+    
+    
+    
+    
 
     # ej2()
 
