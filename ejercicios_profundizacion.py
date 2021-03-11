@@ -19,8 +19,8 @@ __version__ = "1.3"
 def ej1():
     # Ejercicios de práctica con números
     print('Nuestra primera calculadora')
-    '''
-    Realice un calculadora, se ingresará por línea de comando dos
+  
+    """Realice un calculadora, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
     - Suma
     - Resta
@@ -31,10 +31,22 @@ def ej1():
     - Para todos los casos se debe imprimir en pantalla el resultado aclarando
       la operación realizada en cada caso y con que números
       se ha realizado la operación
-      ej: La suma entre 4.2 y 6.5 es 10.7
+      ej: La suma entre 4.2 y 6.5 es 10.7""" 
 
-    '''
-
+    print('Ingrese primer numero')
+    numero_1 = float(input())
+    print('Ingrese segundo numero')
+    numero_2 = float(input())
+    resultado_suma = numero_1 + numero_2
+    resultado_resta = numero_1 - numero_2
+    resultado_mult = numero_1 * numero_2
+    resultado_div = numero_1 / numero_2
+    resultado_pot = numero_1 ** numero_2
+    print('La suma entre', numero_1, 'y', numero_2, 'es', resultado_suma,'\n'
+    'La resta entre', numero_1, 'y', numero_2, 'es', resultado_resta,'\n'
+    'La multiplicacion entre', numero_1, 'y', numero_2, 'es', resultado_mult,'\n'
+    'La division entre', numero_1, 'y', numero_2, 'es', resultado_div,'\n'
+    'El resultado entre', numero_1, 'elevado a', numero_2, 'es', resultado_pot)    
 
 def ej2():
     print('Ejercicios de práctica numérica y cadenas')
@@ -48,14 +60,27 @@ def ej2():
     Finalmente el programa debe imprimir dos líneas de texto por separado
     - En una línea imprimir el nombre completo y el DNI, aclarando de que
       campo se trata cada uno
-            Ej: Nombre Completo: Nombre Apellido , DNI:35205070,
+    Ej: Nombre Completo: Nombre Apellido , DNI:35205070,
     - En la segunda línea se debe imprimir el nombre completo, edad y
       altura de la persona
-      Nuevamente debe aclarar el campo de cada uno, para el que lo lea
-      entienda de que se está hablando.
+    Nuevamente debe aclarar el campo de cada uno, para el que lo lea
+    entienda de que se está hablando.
 
     '''
-
+    print('Programa de consulta en consola')
+    print('Ingrese su Nombre')
+    nombre = str(input())
+    print('Ingrese su Apellido')
+    apellido = str(input())
+    print('Ingrese su DNI')
+    dni = int(input())
+    print('Ingrese su edad')
+    edad = int(input())
+    print('Ingrese su altura')
+    altura = float(input())
+    print('Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'DNI:', dni, '\n'
+    'Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'Edad:', edad, 
+    'Altura', altura)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
@@ -89,7 +114,17 @@ def ej3():
     Cualquier duda con el método split pueden consultarla por el campus
 
     '''
-
+    print('Ingrese nombre completo de su padre')
+    nom_com_padre = str(input())
+    nom_com_padre.split(" ")
+    nombre_padre,apellido_padre = nom_com_padre.split(" ")
+    print('Ingrese nombre completo de su madre')
+    nom_com_madre = str(input())
+    nom_com_madre.split(" ")
+    nombre_madre,apellido_madre = nom_com_madre.split(" ")
+    print('Ingrese nombre del hijo/a')
+    nombre_hijo =str(input())
+    print(nombre_hijo.capitalize(),apellido_padre.capitalize(),apellido_madre.capitalize())    
 
 def ej4():
     # Ejercicios de práctica con cadenas
@@ -123,7 +158,21 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
-
+    print('Averigüemos si es pariente')
+    print('nombre completo de la primera persona')
+    nombre_completo1 = str(input())
+    nombre_completo1.split(" ")
+    nombre1,apellido1 = nombre_completo1.split(" ")
+    print('nombre completo de la segunda persona')
+    nombre_completo2 =str(input())
+    nombre_completo2.split(" ")
+    nombre2,apellido2 = nombre_completo2.split(" ")
+    if apellido2 == apellido1:
+      print('Son parientes')
+    else:
+      print('No son parientes')  
+    # en este caso use condicionales, no se estara bien porque no lo hemos dado aun, 
+    # es lo que se me ocurrio en el momento
 
 def ej5():
     # Ejercicios de práctica con cadenas
@@ -149,89 +198,16 @@ def ej5():
 
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
-
-
-if __name__ == '__main__':
-    print("Ejercicios de práctica 1")
-    # ej1()
-    print('Primera Calculadora')
-    print('Ingrese primer numero')
-    numero_1 = float(input())
-    print('Ingrese segundo numero')
-    numero_2 = float(input())
-    resultado_suma = numero_1 + numero_2
-    resultado_resta = numero_1 - numero_2
-    resultado_mult = numero_1 * numero_2
-    resultado_div = numero_1 / numero_2
-    resultado_pot = numero_1 ** numero_2
-
-    print('La suma entre', numero_1, 'y', numero_2, 'es', resultado_suma,'\n'
-          'La resta entre', numero_1, 'y', numero_2, 'es', resultado_resta,'\n'
-          'La multiplicacion entre', numero_1, 'y', numero_2, 'es', resultado_mult,'\n'
-          'La division entre', numero_1, 'y', numero_2, 'es', resultado_div,'\n'
-          'El resultado entre', numero_1, 'elevado a', numero_2, 'es', resultado_pot)
-
-    # ej2()
-
-    print('Ejercicio de practica 2')
-    print('Programa de consulta en consola')
-
-    print('Ingrese su Nombre')
-    nombre = str(input())
-    print('Ingrese su Apellido')
-    apellido = str(input())
-    print('Ingrese su DNI')
-    dni = int(input())
-    print('Ingrese su edad')
-    edad = int(input())
-    print('Ingrese su altura')
-    altura = float(input())
-    print('Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'DNI:', dni, '\n'
-    'Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'Edad:', edad, 
-    'Altura', altura)
-    
-    # ej3()
-
-    print('Ejercicio de practica 3')
-    print('Ejercicio de practica con cadenas')
-    print('Ingrese nombre completo de su padre')
-    nom_com_padre = str(input())
-    nom_com_padre.split(" ")
-    nombre_padre,apellido_padre = nom_com_padre.split(" ")
-    print('Ingrese nombre completo de su madre')
-    nom_com_madre = str(input())
-    nom_com_madre.split(" ")
-    nombre_madre,apellido_madre = nom_com_madre.split(" ")
-    print('Ingrese nombre completo del hijo/a')
-    nombre_hijo =str(input())
-    print(nombre_hijo.capitalize(),apellido_padre.capitalize(),apellido_madre.capitalize())
-    
-    # ej4()
-    print('Ejercicio de practica 4')
-    print('Comencemos a ponernos serios')
-    print('Averigüemos si es pariente')
-
-    print('nombre completo de la primera persona')
-    nombre_completo1 = str(input())
-    nombre_completo1.split(" ")
-    nombre1,apellido1 = nombre_completo1.split(" ")
-    print('nombre completo de la segunda persona')
-    nombre_completo2 =str(input())
-    nombre_completo2.split(" ")
-    nombre2,apellido2 = nombre_completo2.split(" ")
-    if apellido2 == apellido1:
-        print('Son parientes')
-    else:
-        print('No son parientes')  
-    # en este caso use condicionales, no se estara bien porque no lo hemos dado aun, 
-    # es lo que se me ocurrio en el momento
-
-    # ej5()
-
-    print('Ejercicio de practica 5')
-    print('Ahora si! buena suerte!')
     print('Escriba su nombre completo')
     nom_com = str(input())
     print(nom_com.lower())
     print(nom_com.upper())
     print(nom_com.capitalize())
+
+if __name__ == '__main__':
+    print("Ejercicios de práctica")
+    ej1()
+    ej2()
+    ej3()
+    ej4()
+    ej5()
