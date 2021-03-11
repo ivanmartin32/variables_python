@@ -43,10 +43,10 @@ def ej1():
     resultado_div = numero_1 / numero_2
     resultado_pot = numero_1 ** numero_2
     print('La suma entre', numero_1, 'y', numero_2, 'es', resultado_suma,'\n'
-    'La resta entre', numero_1, 'y', numero_2, 'es', resultado_resta,'\n'
-    'La multiplicacion entre', numero_1, 'y', numero_2, 'es', resultado_mult,'\n'
-    'La division entre', numero_1, 'y', numero_2, 'es', resultado_div,'\n'
-    'El resultado entre', numero_1, 'elevado a', numero_2, 'es', resultado_pot)    
+          'La resta entre', numero_1, 'y', numero_2, 'es', resultado_resta,'\n'
+          'La multiplicacion entre', numero_1, 'y', numero_2, 'es', resultado_mult,'\n'
+          'La division entre', numero_1, 'y', numero_2, 'es', resultado_div,'\n'
+          'El resultado entre', numero_1, 'elevado a', numero_2, 'es', resultado_pot)    
 
 def ej2():
     print('Ejercicios de práctica numérica y cadenas')
