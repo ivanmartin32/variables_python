@@ -79,8 +79,8 @@ def ej2():
     print('Ingrese su altura')
     altura = float(input())
     print('Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'DNI:', dni, '\n'
-    'Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'Edad:', edad, 
-    'Altura', altura)
+          'Nombre completo:', nombre.capitalize(), apellido.capitalize(), 'Edad:', edad, 
+          'Altura', altura)
 
 def ej3():
     print('Ejercicios de práctica con cadenas')
